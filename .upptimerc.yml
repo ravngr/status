@@ -6,15 +6,22 @@ repo: status
 sites:
   - name: Electric Toast (IPv4)
     url: https://ipv4.etoast.net/ping
+    slug: etoast-ipv4
   - name: Electric Toast (IPv6)
     url: https://ipv6.etoast.net/ping
+    slug: etoast-ipv6
 
 status-website:
   cname: status.etoast.net
-  logoUrl: https://raw.githubusercontent.com/upptime/upptime.js.org/master/static/img/icon.svg
+  logoUrl: https://raw.githubusercontent.com/ravngr/status/assets/icon.svg
   name: Toast Status
   navbar:
     - title: Status
       href: /
     - title: GitHub
       href: https://github.com/$OWNER/$REPO
+  robotsText: "User-agent: * \n Disallow: /"
+  theme: dark
+
+workflowSchedule:
+  uptime: "*/15 * * * *"
